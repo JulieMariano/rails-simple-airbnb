@@ -1,0 +1,12 @@
+<div class="container">
+  <h1> All our flats (<%= @flats.count %>)</h1>
+
+    <div> <% @flats.each do |flat| %>
+    <div><%= flat.name %></div>
+    <div><%= flat.address %></div>
+    <div><%= flat.description %></div>
+    <div><%= flat.number_of_guests %></div>
+    <div><%= flat.price_per_night %></div>
+    
+    <% end %>
+</div>
